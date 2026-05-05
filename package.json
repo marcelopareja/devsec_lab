@@ -1,0 +1,21 @@
+{
+  "name": "demo-devsecops-node",
+  "version": "1.0.0",
+  "description": "Demo corta de DevSecOps con CI, seguridad y CD a GitHub Pages",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rm -rf dist && mkdir dist && cp -R public/* dist/",
+    "start": "node src/index.js",
+    "audit": "npm audit --audit-level=high"
+  },
+  "dependencies": {
+    "lodash": "4.17.21" 
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
